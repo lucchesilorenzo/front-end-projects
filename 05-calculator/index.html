@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div id="calculator">
+      <input type="text" class="display" disabled />
+
+      <input
+        type="button"
+        value="+"
+        class="operator"
+        onclick="setOperator('+')"
+      />
+      <input
+        type="button"
+        value="-"
+        class="operator"
+        onclick="setOperator('-')"
+      />
+      <input
+        type="button"
+        value="*"
+        class="operator"
+        onclick="setOperator('*')"
+      />
+      <input
+        type="button"
+        value="/"
+        class="operator"
+        onclick="setOperator('/')"
+      />
+
+      <input
+        type="button"
+        value="7"
+        class="number"
+        onclick="appendNumber('7')"
+      />
+      <input
+        type="button"
+        value="8"
+        class="number"
+        onclick="appendNumber('8')"
+      />
+      <input
+        type="button"
+        value="9"
+        class="number"
+        onclick="appendNumber('9')"
+      />
+      <input
+        type="button"
+        value="4"
+        class="number"
+        onclick="appendNumber('4')"
+      />
+      <input
+        type="button"
+        value="5"
+        class="number"
+        onclick="appendNumber('5')"
+      />
+      <input
+        type="button"
+        value="6"
+        class="number"
+        onclick="appendNumber('6')"
+      />
+      <input
+        type="button"
+        value="1"
+        class="number"
+        onclick="appendNumber('1')"
+      />
+      <input
+        type="button"
+        value="2"
+        class="number"
+        onclick="appendNumber('2')"
+      />
+      <input
+        type="button"
+        value="3"
+        class="number"
+        onclick="appendNumber('3')"
+      />
+      <input
+        type="button"
+        value="0"
+        class="number"
+        onclick="appendNumber('0')"
+      />
+
+      <input type="button" value="=" class="equal" onclick="calculate()" />
+      <input type="button" value="AC" class="reset" onclick="resetAll()" />
+      <input type="button" value="." class="float" onclick="appendDecimal()" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

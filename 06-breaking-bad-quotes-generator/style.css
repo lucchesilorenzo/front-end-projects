@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.wrapper {
+  max-width: 100%;
+}
+
+h1 {
+  padding: 10px;
+  text-align: center;
+}
+
+span {
+  font-size: 40px;
+  border: 2px solid;
+}
+
+blockquote {
+  font-size: 1.4em;
+  width: 60%;
+  margin: 50px auto;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid #cccccc;
+  line-height: 1.6;
+  position: relative;
+  display: none;
+}
+
+blockquote::before {
+  content: open-quote;
+  color: #cccccc;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+cite {
+  color: #888c8f;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+}

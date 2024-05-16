@@ -1,0 +1,142 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #020d18;
+  --color-secondary: #f1c40f;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  padding: 20px;
+}
+
+@media (max-width: 1024px) {
+  #grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  #grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+img {
+  width: 60px;
+  object-fit: contain;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+  background-color: var(--color-primary);
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.info-details {
+  font-size: 16px;
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.character-info {
+  padding: 10px;
+  color: white;
+  background-color: #3c3e44;
+}
+
+.character-info div {
+  padding: 5px;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+#btn-wrapper {
+  margin: 10px;
+}
+
+.planet-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#btn-wrapper button {
+  display: inline-block;
+  padding: 0.7em 1.4em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.15em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #3369ff;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+#btn-wrapper button:active {
+  top: 0.1em;
+}
+
+#btn-wrapper button:disabled,
+button:active {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  top: 0;
+}

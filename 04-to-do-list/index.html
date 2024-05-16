@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>To-Do List</h1>
+      <h2>Double-click an item to mark it complete.</h2>
+
+      <form id="item-form">
+        <input type="text" name="item-input" id="item-input" />
+        <input type="submit" value="Add" id="item-submit" />
+      </form>
+
+      <ol id="item-list"></ol>
+
+      <div id="buttons">
+        <button id="clear-completed">Clear Completed</button>
+        <button id="empty-list">Empty List</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+label {
+  font-size: 20px;
+}
+
+#pokemon-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 40%;
+  margin-top: 10px;
+}
+
+#pokemon-description > div {
+  margin-bottom: 10px;
+}
+
+#pokemon-input {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+#pokemon-submit {
+  border: 3px solid green;
+  padding: 0.85em 1.5em;
+  color: green;
+  border-radius: 2em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#pokemon-submit:hover {
+  background-color: green;
+  color: #fff;
+}
